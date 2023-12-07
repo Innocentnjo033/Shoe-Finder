@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Finder - Fit </title>
+    <link rel="stylesheet" href="Fit.css">
+    <style type="text/css">
+
+.centered-imagery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+        
+
+        body {
+        background-image: url(images/moving.gif);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+        </style>
+        
+        
+        <script src="https://kit.fontawesome.com/a0e7c891c5.js" crossorigin="anonymous"></script>
+
+        <script>
+          window.onload = function() {
+            const notice = document.getElementById('notice');
+            notice.style.display = 'block';
+            setTimeout(function() {
+                notice.style.display = 'none';
+            }, 3000); 
+        };
+
+
+
+        const imageLinks = document.querySelectorAll('.image-link');
+
+imageLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        const popupText = link.querySelector('.popup-text');
+        popupText.style.visibility = 'visible';
+        popupText.style.opacity = '1';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        const popupText = link.querySelector('.popup-text');
+        popupText.style.visibility = 'hidden';
+        popupText.style.opacity = '0';
+    });
+});
+
+function toggleTips() {
+  const tipsContent = document.getElementById('tipsContent');
+  tipsContent.classList.toggle('hidden');
+}
+
+
+
+        
+        </script>
+    
+
+
+        
+</head>
+<body>
+
+
+<div class="container"><header> 
+    <img src="images/SHOE FINDER.png" alt="picture for website">
+</header>
+
+
+<nav>
+    <a href="Home.html">HOME <i class="fa-solid fa-house" style="color: #ffffff;"></i> | </a>
+    <a href="Shoe.html">SHOES </a>
+    <a href="Brands.html">BRANDS</a>
+    <a href="History.html">HISTORY</a>
+    <a href="Fit.html">FIT</a>
+</nav>
+
+
+<main>
+
+    <h1>Fit <i class="fa-solid fa-pen-ruler" style="color: #ffffff;"></i></h1>
+    <hr style="height:2px;border-width:0;color:gray;background-color: #ffffff;border-radius: 5px;">
+
+<p>Footwear serves a multitude of purposes. It shields our feet, provides support for our body weight, and has the potential to offer both comfort and style. The quest for suitable shoes, ensuring they fit correctly, holds significant importance in maintaining the contentment of both feet and body. Ill-fitting footwear can result in discomfort and trigger various foot issues such as bunions, corns, calluses, hammertoes, plantar fasciitis, stress fractures, among other ailments.</p1>
+
+
+<p style="padding: 30px; text-align: left;">Adhere to these guidelines provided by Orthopaedic Surgeons specialising in Foot and Ankle conditions to discover the ideal footwear for your needs.</p>
+
+<p>1. Have your feet measured regularly as their size and shape can change over time. Avoid relying solely on your usual shoe size.</p>
+
+<p>2. Fit shoes according to your larger foot, ensuring both feet are measured due to potential size differences.</p>
+
+<p>3. Opt for measurements at day's end when your feet are largest to ensure comfort throughout the day, considering feet tend to swell.</p>
+
+<p>4. Don't depend solely on shoe size labels; variations among brands make it a mere starting point for selection.</p>
+
+<p>5. Assess the shoe's shape to match your foot's shape for comfortable wear, considering shoes shouldn't necessarily stretch over time.</p>
+
+<p>6. Verify the shoe's width and depth, ensuring the ball and toes fit comfortably without rubbing or pressure.</p>
+
+<p>7. Allow space at the shoe's end, ensuring a 3/8" to 1/2" space between the longest toe and the shoe's tip, preventing discomfort.</p>
+
+<p>8. Test comfort by walking around in the shoes; ensure they fit well without causing chafing or slipping, particularly at the heel.</p>
+
+<hr style="height:2px;border-width:0;color:gray;background-color: #ffffff;border-radius: 5px;">
+
+<div class="alligned-text">Here is a video that can help you!</div>
+
+
+
+
+
+
+
+
+
+
+
+<button id="tipsButton" onclick="toggleTips()">
+    <span>&#63;</span> <!-- Question mark icon -->
+  </button>
+  
+  <div id="tipsContent" class="hidden">
+    <h2>Choose Shoes According to Your Activity:</h2>
+    <p><strong>Running Shoes:</strong> Tailored for athletes, offering specific cushioning at the heel and flexibility at the toes to enhance performance during running.</p>
+    <p><strong>Walking Shoes:</strong> Designed with a shock-absorbing heel and flexibility at the ball of the foot, ideal for walking activities.</p>
+    <p><strong>Cross-trainers:</strong> Versatile shoes suitable for various exercises, serving as all-purpose footwear for general workouts.</p>
+    <p><strong>Basketball Shoes:</strong> Primarily crafted for basketball; they might not provide optimal support for extended walking.</p>
+    <p><strong>Cycling Shoes:</strong> Designed with stiffness to improve pedaling efficiency, but not versatile for activities beyond cycling.</p>
+    <p><strong>Dress Shoes:</strong> Modern dress shoes not only exude style but also prioritize comfort. Many now feature sneaker-like soles, offering better cushioning, improved tread, and enhanced arch support. Some dress shoes combine elegance and comfort, catering to various occasions, whereas expensive Italian loafers may not suit everyone's preferences or needs.</p>
+ 
+  </div>
+
+  <div class="Centered-Video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mHGPa4ZJgjQ?si=DTXze-wPv2j9N72G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+
+
+<div id="notice">
+    <p><i class="fa-solid fa-door-open" style="color: #ffffff;"></i> You are on: Fit</p>
+</div>
+
+ <h2>List <i class="fa-solid fa-list" style="color: #ffffff;"></i></h2>
+
+ <hr style="height:2px;border-width:0;color:gray;background-color: #ffffff;border-radius: 5px;">
+
+ <div class="image-links-container">
+    <div class="image-link">
+        <a href="https://www.adidas.co.uk/?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-ROI-_-Adidas-X-X-Brand-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700007277000591&http://www.adidas.co.uk/?cm_mmc=AdieSEM_Google-_-Footwear-General-B-Exact-_-Shoes-Sandals-X-General-_-&cm_mmca1=UK&cm_mmca2=&ds_kid=&&af_reengagement_window=30d&is_retargeting=true&pid=googleadwords_temp&c=adidas-Brand-B-Exact-ROI&af_channel=Search&gad_source=1&gclid=CjwKCAiAgeeqBhBAEiwAoDDhn0RK3H4ug6U5XFHgbFt8K0a0oOwV-gXDAj29j8afdJnqyAcop5PochoCrTMQAvD_BwE&gclsrc=aw.ds">
+            <img src="images/adidas.png" width="150" length="150" alt="Description of image 1">
+            <span class="popup-text">Visit?</span>
+        </a>
+    </div>
+    <div class="image-link">
+        <a href="https://www.nike.com/gb/?cp=17971425167_search_&Macro=-nike-g-10628702377-107985201027-e-c-EN-pure-680945313838-kwd-11642601-9045498&ds_rl=1252249&gad_source=1&gclid=CjwKCAiAgeeqBhBAEiwAoDDhn7nyNis5SUVO6U-fniTBevd83BpqqodV2vCnflomrhG-Kl7iaGMhPRoC5qAQAvD_BwE&gclsrc=aw.ds">
+            <img src="images/nikelogoo.png" width="150" length="150">
+            <span class="popup-text">Visit?</span>
+        </a>
+    </div>
+    <div class="image-link">
+        <a href="https://uk.puma.com/uk/en?gad_source=1&gclid=Cj0KCQiApOyqBhDlARIsAGfnyMr3yqy3HIt4MGtRB6HRGI_6wZV6UX7UhYlWg9vZBYMrNChexj9DbxQaAqAUEALw_wcB">
+            <img src="images/Puma logo.png" alt="Description of image 3" width="150" length="150">
+            <span class="popup-text">Visit?</span>
+        </a>
+    </div>
+    <div class="image-link">
+        <a href="https://www.newbalance.co.uk/?cq_src=google_ads&cq_cmp=19962576438&cq_con=&cq_term=&cq_med=&cq_plac=&cq_net=x&cq_pos=&cq_plt=gp&gad_source=1&gclid=Cj0KCQiApOyqBhDlARIsAGfnyMra3IpJZgMBke-km_dmMNBI0HSNygNQBONjyX4-RHw46HHNnEEuEScaAitNEALw_wcB&gclsrc=aw.ds">
+            <img src="images/NB.png" alt="Description of image 4" width="150" length="150">
+            <span class="popup-text">Visit?</span>
+        </a>
+    </div>
+    <div class="image-link">
+        <a href="https://www.vans.co.uk">
+            <img src="images/Vans logo.png" alt="Description of image 5" width="150" length="150">
+            <span class="popup-text">Visit?</span>
+        </a>
+    </div>
+
+</div>
+
+
+
+</main>
+
+
+
+
+
+
+
+<footer>
+    
+</footer>
+</div>
+
+
+
+
+
+
+</body>
+</html>

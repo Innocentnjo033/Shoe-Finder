@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Finder</title>
+    <link rel="stylesheet" href="index.css">
+    <style type="text/css">
+
+    body {
+        background-image: url(images/moving.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+        
+    </style>
+
+    
+<script src="https://kit.fontawesome.com/a0e7c891c5.js" crossorigin="anonymous"></script>
+        
+   <script>
+      window.onload = function() {
+            const notice = document.getElementById('notice');
+            notice.style.display = 'block';
+            setTimeout(function() {
+                notice.style.display = 'none';
+            }, 3000); 
+        };
+
+        let slideIndex = 1; 
+showSlides(slideIndex);
+
+function moveSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    const slides = document.getElementsByClassName("mySlides");
+    
+    if (n > slides.length) { slideIndex = 1 } 
+    if (n < 1) { slideIndex = slides.length } 
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    
+    slides[slideIndex - 1].style.display = "block"; 
+}
+
+
+
+
+   </script>
+    
+        
+</head>
+<body>
+
+
+    
+    
+    
+
+<div class="container"><header> 
+    <img src="images/SHOE FINDER.png" alt="picture for website">
+</header>
+
+
+
+<nav>
+    <a href="Shoe.html">SHOES</a>
+    <a href="Brands.html">BRANDS</a>
+    <a href="History.html">HISTORY</a>
+    <a href="Fit.html">FIT</a>
+</nav>
+
+
+<main>
+    
+<p id="note">A slideshow displaying tips is available below. To start it, select one of the arrows.  <i class="fa-solid fa-bolt fa-fade" style="color: #ffffff;"></i></p>
+
+
+
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <h2>Tip 1: Proper Fit Matters <i class="fa-solid fa-pen-ruler" style="color: #ffffff;"></i></h2>
+            <p>Always ensure your shoes fit comfortably without being too tight or loose. Your feet can swell during the day, so try shoes on in the afternoon for the best fit. </p>
+        </div>
+    
+        <div class="mySlides fade">
+            <h2>Tip 2: Rotate Your Shoes <i class="fa-solid fa-rotate-right fa-spin" style="color: #ffffff;"></i></h2>
+            <p>Rotate between multiple pairs of shoes to allow them to dry out and maintain their shape. This also helps prevent excessive wear and tear on a single pair.</p>
+        </div>
+    
+        <div class="mySlides fade">
+            <h2>Tip 3: Choose Quality Over Quantity <i class="fa-solid fa-scale-balanced" style="color: #ffffff;"></i></h2>
+            <p>Invest in well-made, quality shoes rather than buying multiple cheaper pairs. Quality shoes tend to be more comfortable, durable, and better for your feet in the long run.</p>
+        </div>
+    
+        
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+
+    <div id="notice">
+        <p><i class="fa-solid fa-door-open" style="color: #ffffff;"></i> You are on: Home </p>
+    </div>
+
+    <h1>Welcome to Shoe Finder!</h1>
+    <p>Find Your Sole Mate!</p>
+    <p>Thank you for visiting Shoe Finder, a place where discovering the ideal shoes is a breeze. This platform is made to carefully match you with the best shoes that fit your needs in terms of comfort, size, and style. Discover an extensive selection of shoes from leading brands, each carefully chosen to guarantee that you walk comfortably and confidently. Bid farewell to a smooth shoe-finding process and easily slip into shoes that capture your style.</p>
+
+    
+
+  
+</main>
+
+
+<section>
+    
+ 
+    
+ 
+
+
+<hr style="height:5px;border-width:0;color:gray;background-color: #ffffff;border-radius: 5px;">
+
+<p2>
+Here are some videos to watch <i class="fa-solid fa-circle-play" style="color: #ffffff;"></i>
+</p2>
+
+<div class="STRAIGHTTOGOOGLE">
+    <a href="https://www.google.co.uk/search?q=best+shoes+this+year&sca_esv=573588611&sxsrf=AM9HkKlH0RRHiFNihc-mLpIy8s1rlFW8LA%3A1697375431934&ei=x-QrZYGJOOynhbIP_8mY-Ag&oq=best+shoes+tjis&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2Jlc3Qgc2hvZXMgdGppcyoCCAAyBxAAGA0YgAQyBxAAGA0YgAQyBxAAGA0YgAQyBxAAGA0YgAQyBhAAGBYYHjIIEAAYCBgeGA0yCBAAGAgYHhgNMggQABgIGB4YDTIIEAAYCBgeGA0yCBAAGAgYHhgNSJl9ULQeWIpncAZ4AZABAJgBhwGgAZsFqgEDNy4xuAEByAEA-AEBwgIKEAAYRxjWBBiwA8ICBxAAGIoFGEPCAgUQABiABMICCBAAGIAEGLEDwgIIEAAYigUYkQLCAgsQABgWGB4Y8QQYCsICCBAAGIoFGIYDwgIFECEYoAHiAwQYACBBiAYBkAYE&sclient=gws-wiz-serp" class="google-link" target="_blank" >Search  <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+</div>
+
+    <div style="text-align: center;">
+        <iframe width="500" height="250" src="https://www.youtube-nocookie.com/embed/BFmYVrbui2I?si=MgQCMinIzZ6k_XrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </div>
+
+    
+    
+
+</section>
+
+
+
+
+
+<footer>
+    <p>Shoe Finder Created by Innocent Joku-John, Contact me via school email at 23008783@student.bmet.ac.uk</p>
+</footer>
+</div>
+
+
+</body>
+</html>
